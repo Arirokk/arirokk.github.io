@@ -1,6 +1,6 @@
-function addTask () {
+function addTask() {
 
-  //read input
+  //read what we wrote in text input
   var input = document.getElementById("input");
   var newTask = input.value;
   //if there is something, crete a new list in line
@@ -14,20 +14,23 @@ function addTask () {
       +
     newTask;
 
-//change text in placeholder
-document.getElementById("tasks").appendChild(item);
+    //add new list to priveous list
+    document.getElementById("tasks").appendChild(item);
+    //change placeholder
     input.value = "";
     input.placeholder="enter next task..."
   }
 }
 
-function markDone (item) {
+function markDone(item) {
     item.className = 'finished';
 }
 
 function remove (item) {
   if (item.className == 'finished') {
     item.remove();
+  } else if (confirm("The task has not been completed. Cancel?")) {
+    item.remove()
   }
 }
 
