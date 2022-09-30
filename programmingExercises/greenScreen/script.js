@@ -46,8 +46,31 @@ function create() {
     alert("Background image isn't uploaded");
     return;
   }
+
+  //check if the images have the same dimensions
+  //if not suggest to crop them
+  if (fgImage.getWidth() !== bgImage.getWidth() || fgImage.getHeight() !== bgImage.getHeight()) {
+    if (fgImage.getWidth() > bgImage.getWidth()) {
+      if (confirm("Do you want to scale foreground image width?")) {
+        fgImage.setSize(bgImage.getWidth(), fgImage.getHeight());
+      }
+    } else {
+      if (confirm("Do you want to scale background image width?")) {
+        bgImage.setSize(fgImage.getWidth(), bgImage.getHeight());
+      }
+    }
+    if (fgImage.getHeight() > bgImage.getHeight()) {
+      if (confirm("Do you want to scale foreground image height?")) {
+        fgImage.setSize(fgImage.getWidth(), bgImage.getHeight());
+      }
+    } else {
+      if (confirm("Do you want to scale background image height?")) {
+        bgImage.setSize(bgImage.getWidth(), fgImage.getHeight());
+      }
+    }
+  }
   clearCanvases();
-  
+
   var output = new SimpleImage(fgImage.getWidth(), fgImage.getHeight());
   for (var pixel of fgImage.values()) {
     var x = pixel.getX();
