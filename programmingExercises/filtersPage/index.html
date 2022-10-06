@@ -1,0 +1,69 @@
+<!-- with this page you can upload and process your image -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The page with image filters</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id = "header">
+  <h2>Let's apply some filters to your image</h2>
+</div>
+<div id = "content">
+  <p>
+    <div class = "container">
+      <div class = "button-wrap">
+        <label class="label" for = "fileInput">Upload File</label>
+        <input id = "fileInput"
+           type = "file"
+           multiple = "false"
+           accept = "image/*"
+           class = "input"
+           onchange = "uploadImage()">
+      </div>
+    </div>
+  </p>
+  <p id = "forCanvas">
+  <p>
+    <input type = "button"
+           value = "Make it grey"
+           class = "button"
+           onclick = "doGrey()">
+    <input type = "button"
+           value = "Make it red"
+           class = "button"
+           onclick = "doRed()">
+    <input type = "button"
+           value = "Blur it"
+           class = "button"
+           onclick = "doBlur()">
+    <input type = "button"
+           value = "Make the rainbow"
+           class = "button"
+           onclick = "doRainb()">
+    <input type = "button"
+           value = "Show mirror"
+           class = "button"
+           onclick = "doMirr()">
+  </p>
+  <p>
+    <input type = "button"
+           value = "Reset"
+           class = "button"
+           onclick = "resetCanvas()">
+    <input type = "button"
+           value = "Show the size"
+           class = "button"
+           onclick = "showSize()">
+  </p>
+
+</div>
+<div id = "imageSize">
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
