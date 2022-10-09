@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Steganography encription-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steganography encryption</title>
+</head>
+<body>
+<div id = div1>
+Here you can try steganography to encrypt an image in another image.
+<br>
+I recommend not to use unusual aspect ratio.
+<br>
+After you got the image you'll be able to decipher it on <a href = "../steganographyDecrypt/index.html">this page<a/>.
+<br>
+You can encrypt even text. But the last one must be in the image format.
+<br>
+  You can create it on your own in you smarphone or take <a href = "testText.png" target="_blank">this one I have created</a> and provide you.
+<br>
+<!--<img src = "steganographyEncrypt/testText.png">-->
+Upload the image that is the medium
+<input id = "storingImage"
+       type = "file"
+       multiple = "false"
+       accept = "image/*"
+       onchange = "uploadStoringImage()">
+<br>
+Upload the image you want to hide
+<input id = "hidingImage"
+       type = "file"
+       multiple = "false"
+       accept = "image/*"
+       onchange = "uploadHidingImage()">
+<br>
+<input type = "button"
+       value = "Let's process the images!"
+       onclick = "process()">
+</div>
+<br>
+<canvas id = "canvas1"></canvas>
+<canvas id = "canvas2"></canvas>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
