@@ -1,13 +1,13 @@
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
-} 
+}
 
 a:link {
-  color: #ff3232;
+  color: #f06464;
 }
 a:visited {
-  color: #f07878;
+  color: #f0b4b4;
 }
 body {
   width: 1000px;
@@ -19,4 +19,8 @@ body {
 
 img {
   border-radius: 25px;
+}
+
+object {
+  background-color: #afaf8c;
 }
