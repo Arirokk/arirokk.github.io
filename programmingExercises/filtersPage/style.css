@@ -1,9 +1,13 @@
 body {
-  background-color: #b6b6b6;
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  color: #f0f0f0;
+  background-color: #232323;
 }
 
 .button {
-  background-color: #003502;
+  background-color: #32af00;
   border: none;
   color: white;
   padding: 7px 12px;
@@ -33,7 +37,7 @@ input[type="file"] {
   top: 2px;
   left: 16px;
   font-size: 14px;
-  color: black;
+  color: #f0f0f0;
 }
 
 .label {
@@ -42,7 +46,7 @@ input[type="file"] {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #003502;
+  background-color: #32af00;
   font-size: 14px;
   color: white;
 }

@@ -1,0 +1,13 @@
+a:link {
+  color: #ff3232;
+}
+a:visited {
+  color: #f07878;
+}
+body {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  color: #f0f0f0;
+  background-color: #232323;
+}
