@@ -9,6 +9,8 @@ a:link {
 a:visited {
   color: #f0b4b4;
 }
+/*It wou;d be great to have small margin on the mobile
+and large on the desktop*/
 body {
   width: 90%;
   margin: auto;
@@ -27,6 +29,3 @@ img {
 object {
   background-color: #afaf8c;
 }
-/*
-vw - viewport width
-*/
