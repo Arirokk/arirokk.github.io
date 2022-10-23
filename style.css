@@ -10,17 +10,23 @@ a:visited {
   color: #f0b4b4;
 }
 body {
-  /*width: 1000px;*/
+  width: 90%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   color: #f0f0f0;
   background-color: #232323;
 }
 
 img {
   border-radius: 25px;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
 }
 
 object {
   background-color: #afaf8c;
 }
+/*
+vw - viewport width
+*/
