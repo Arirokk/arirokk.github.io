@@ -7,7 +7,7 @@
  * You should import all classes from edu.duke (added in the folder)
  * To compile in the terminal (if the library in the same folder as .java)
  * "javac -cp package.jar Program.java"
- * to run the class int terminal
+ * to run the class in the terminal
  * "java -cp .: package.jar Program"
  * Also you can find .fa files in dna's folder to test the program
  *
@@ -17,7 +17,7 @@
 import edu.duke.*;
 import java.io.File;
 
-public class processingDNA {
+public class ProcessingDNA {
     // find given stop codon from given index in given string
     public int findStopCodon(String dna, int startIndex, String stopCodon) {
         int currIndex = dna.indexOf(stopCodon, startIndex + 3);
@@ -186,7 +186,7 @@ public class processingDNA {
         String dna = fr.asString().toLowerCase();
         return dna;
     }
-    
+
     public void processGenes() {
         String dna = makeString();
         StorageResource deck = storeAllGenes(dna);
