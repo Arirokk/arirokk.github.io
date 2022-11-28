@@ -31,7 +31,7 @@ public class ProcessingDNA {
                 currIndex = dna.indexOf(stopCodon, currIndex + 1);
             }
         }
-        // is for findGene function
+        // we'll  for findGene function
         return -1;
     }
 
@@ -64,7 +64,7 @@ public class ProcessingDNA {
         if (minIndex == -1 || (tagIndex != -1 && tagIndex < minIndex)) {
             minIndex = tagIndex;
         }
-        // string hasn't stop codons
+        // string doesn't have stop codons
         if (minIndex == -1) {
             return "";
         }
