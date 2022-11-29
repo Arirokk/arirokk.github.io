@@ -11,7 +11,6 @@
  * "java -cp .: package.jar Program"
  * Also you can find .fa files in dna's folder to test the program
  *
- *
  */
 
 import edu.duke.*;

@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-
-<html lang="en">
 <!--This app will allow us to paint some picture like the established Windows Paint-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,16 +18,13 @@
   <input type = "text"
          onchange = "setHeight(value)">
 </p>
-
 <h2>Let's draw something ugly!</h2>
-
 <!--create canvas with control from the mouse-->
 <canvas id = "canvas1"
         onmousedown = "startPaint()"
         onmouseup = "endPaint()"
         onmousemove = "doPaint(event.offsetX, event.offsetY)">
 </canvas>
-
 <!--choosing the color of the brush-->
 <p>
   Brush color
@@ -51,7 +47,5 @@
          onclick = "clearCanvas()"
 </p>
   <script  src="./script.js"></script>
-
 </body>
 </html>
-<!--  -->

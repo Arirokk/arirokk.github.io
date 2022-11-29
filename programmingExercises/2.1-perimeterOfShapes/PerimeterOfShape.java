@@ -9,6 +9,7 @@
  * to run the class in the terminal
  * "java -cp .: package.jar Program"
  * Also you can find .txt files in the folder to test this program
+ *
 */
 
 import edu.duke.*;
