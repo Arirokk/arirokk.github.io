@@ -1,2 +1,3 @@
-# arirokk.github.io
-A small website with the accomplished assignments from Duke University and other kinds of training code
+## arirokk.github.io
+
+A website with the accomplished assignments from Duke University and other kinds of training code
