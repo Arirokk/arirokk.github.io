@@ -1,35 +1,37 @@
 <!--The assignment with the implementation of
 slider and color picker-->
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider and Color Picker Exercise</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Slider and Color Picker Exercise</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<h3 id = "topic">Slider</h3>
+<a href="../" style="font-size:15px">back</a>
+
+<h3 id="topic">Slider</h3>
 <div>
-  <canvas id = "canvas"
-        width = "180px"
-        height = "180px">
-  </canvas>
+    <canvas height="180px"
+            id="canvas"
+            width="180px">
+    </canvas>
 </div>
 <div>
-  <input id = "slider"
-         type = "range"
-         min = "10"
-         max = "80"
-         value = "10"
-         oninput = "doSquare()">
+    <input id="slider"
+           max="80"
+           min="10"
+           oninput="doSquare()"
+           type="range"
+           value="10">
 </div>
 <div>
-  <input id = "inputColor"
-         type = "color"
-         value = "#1f19d1"
-         onchange = "inputColor()">
+    <input id="inputColor"
+           onchange="inputColor()"
+           type="color"
+           value="#1f19d1">
 </div>
-  <script  src="./script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

@@ -2,46 +2,48 @@
 and an image for background then creates the composit
 Both images should be the same dimensions-->
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green Screen Program</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Green Screen Program</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<div class = "header">
-  <h3>Green Screen Program</h3>
+<a href="../" style="font-size:15px">back</a>
+
+<div class="header">
+    <h3>Green Screen Program</h3>
 </div>
-<div class = "content">
-  <p>
-    Upload foreground
-    <input id = "fgImageInput"
-           type = "file"
-           multiple = "false"
-           accept = "image/*"
-           onchange = "uploadFgImage()">
-    Upload background
-    <input id = "bgImageInput"
-           type = "file"
-           multiple = "false"
-           accept = "image/*"
-           onchange = "uploadBgImage()">
-  </p>
-  <p id = "canvasesHere">
-  <br>
-  <p>
-    <input id = "createButton"
-         type = "button"
-         value = "Create a composit"
-         onclick = "create()">
-    <input id = "clearButton"
-         type = "button"
-         value = "Clear"
-         onclick = "clearCanvases()">
-  </p>
+<div class="content">
+    <p>
+        Upload foreground
+        <input accept="image/*"
+               id="fgImageInput"
+               multiple="false"
+               onchange="uploadFgImage()"
+               type="file">
+        Upload background
+        <input accept="image/*"
+               id="bgImageInput"
+               multiple="false"
+               onchange="uploadBgImage()"
+               type="file">
+    </p>
+    <p id="canvasesHere">
+        <br>
+    <p>
+        <input id="createButton"
+               onclick="create()"
+               type="button"
+               value="Create a composit">
+        <input id="clearButton"
+               onclick="clearCanvases()"
+               type="button"
+               value="Clear">
+    </p>
 </div>
 <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-<script  src="./script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
