@@ -1,0 +1,36 @@
+<!--The assignment with the program is for turning into grayscale chosen image from the disk-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Grayscale image</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<div class="header">
+    <h2>Upload, display and turn into grayscale the image</h2>
+</div>
+<div class="content">
+    <p id="canvasHere"></p>
+    <p>
+        <!--choose only one file and exactly an image with any format-->
+        <input accept="image/*"
+               id="uploadImage"
+               multiple="false"
+               onchange="upload()"
+               type="file">
+    </p>
+    <p>
+        <input id="greyButton"
+               onclick="makeGray()"
+               type="button"
+               value="Make it gray">
+    </p>
+</div>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

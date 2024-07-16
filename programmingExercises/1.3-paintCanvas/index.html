@@ -1,0 +1,53 @@
+<!--This app will allow us to paint some picture like the established Windows Paint-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Paint on Canvas</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<!--two windows for size changing-->
+<p>
+    Width
+    <input onchange="setWidth(value)"
+           type="text">
+
+    Height
+    <input onchange="setHeight(value)"
+           type="text">
+</p>
+<h2>Let's draw something ugly!</h2>
+<!--create canvas with control from the mouse-->
+<canvas id="canvas1"
+        onmousedown="startPaint()"
+        onmousemove="doPaint(event.offsetX, event.offsetY)"
+        onmouseup="endPaint()">
+</canvas>
+<!--choosing the color of the brush-->
+<p>
+    Brush color
+    <input onchange=changeColor(this.value)
+           type="color"
+           value="#000">
+    <!--choosing the size of the brush-->
+    Brush size
+    <input id="brushSize"
+           max="30"
+           min="1"
+           oninput="resizeBrush(this.value)"
+           type="range">
+    <!--showing the brush size-->
+    <output id="sizeOutput"></output>
+</p>
+<p>
+    <input onclick="clearCanvas()"
+           type="button"
+           value="Clear the canvas"
+</p>
+<script src="./script.js"></script>
+</body>
+</html>

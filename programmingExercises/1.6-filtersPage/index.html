@@ -1,0 +1,68 @@
+<!--The assignment where you can upload and process your image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>The page with image filters</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<div id="header">
+    <h2>Let's apply some filters to your image</h2>
+</div>
+<div id="content">
+    <p>
+    <div class="container">
+        <div class="button-wrap">
+            <label class="label" for="fileInput">Upload File</label>
+            <input accept="image/*"
+                   class="input"
+                   id="fileInput"
+                   multiple="false"
+                   onchange="uploadImage()"
+                   type="file">
+        </div>
+    </div>
+    </p>
+    <p id="forCanvas">
+    <p>
+        <input class="button"
+               onclick="doGrey()"
+               type="button"
+               value="Make it grey">
+        <input class="button"
+               onclick="doRed()"
+               type="button"
+               value="Make it red">
+        <input class="button"
+               onclick="doBlur()"
+               type="button"
+               value="Blur it">
+        <input class="button"
+               onclick="doRainb()"
+               type="button"
+               value="Make the rainbow">
+        <input class="button"
+               onclick="doMirr()"
+               type="button"
+               value="Show mirror">
+    </p>
+    <p>
+        <input class="button"
+               onclick="resetCanvas()"
+               type="button"
+               value="Reset">
+        <input class="button"
+               onclick="showSize()"
+               type="button"
+               value="Show the size">
+    </p>
+</div>
+<div id="imageSize">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

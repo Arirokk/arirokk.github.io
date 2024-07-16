@@ -1,0 +1,13 @@
+/*canvas {
+  width: 300px;
+}*/
+
+/*
+create fgImage, bgImage, canvas1 and canvas2
+
+click! upload foreground image with green back. create canvas 1, draw it on it.
+
+click! upload background image with green back. create canvas 1, draw it on it.
+
+go through each pixel of foreground image. if pixel is green, write it on canvas1 with the same coordinates. if not, get pixel with the same coordinates from background and write it in canvas 1.
+*/

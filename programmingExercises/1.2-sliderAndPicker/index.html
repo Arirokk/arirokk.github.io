@@ -1,0 +1,37 @@
+<!--The assignment with the implementation of
+slider and color picker-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Slider and Color Picker Exercise</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<h3 id="topic">Slider</h3>
+<div>
+    <canvas height="180px"
+            id="canvas"
+            width="180px">
+    </canvas>
+</div>
+<div>
+    <input id="slider"
+           max="80"
+           min="10"
+           oninput="doSquare()"
+           type="range"
+           value="10">
+</div>
+<div>
+    <input id="inputColor"
+           onchange="inputColor()"
+           type="color"
+           value="#1f19d1">
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

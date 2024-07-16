@@ -1,0 +1,52 @@
+<!--The assignment about steganography encription. Only desktop browsers-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style.css" rel="stylesheet">
+    <title>Steganography encryption</title>
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<div id=div1>
+    Unfortunately it works only on desktops and I don't want to know why!
+    <br>
+    Here you can try steganography to encrypt an image in another image.
+    <br>
+    I recommend not to use unusual aspect ratio.
+    <br>
+    After you got the image you'll be able to decipher it on <a href="../steganographyDecrypt/index.html">this page<a/>.
+    <br>
+    You can encrypt even text. But the last one must be in the image format.
+    <br>
+    You can any photo or create something on your own or take <a href="testText.png" target="_blank">this one I have
+        created</a> and provide you.
+    <br>
+    Upload the image that is the medium
+    <input accept="image/*"
+           id="storingImage"
+           multiple="false"
+           onchange="uploadStoringImage()"
+           type="file">
+    <br>
+    Upload the image you want to hide
+    <input accept="image/*"
+           id="hidingImage"
+           multiple="false"
+           onchange="uploadHidingImage()"
+           type="file">
+    <br>
+    <input onclick="process()"
+           type="button"
+           value="Let's process the images!">
+</div>
+<br>
+<canvas id="canvas1"></canvas>
+<canvas id="canvas2"></canvas>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>

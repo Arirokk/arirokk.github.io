@@ -1,0 +1,31 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+a:link {
+  color: #f06464;
+}
+a:visited {
+  color: #f0b4b4;
+}
+
+body {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  color: #f0f0f0;
+  background-color: #232323;
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+}
+
+object {
+  background-color: #afaf8c;
+}

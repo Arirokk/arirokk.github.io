@@ -1,0 +1,30 @@
+<!--This application allows you to decrypt the information
+ecrypted with steganography in an image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style.css" rel="stylesheet">
+    <title>Steganography decrypting</title>
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<p>With this app you can decipher an image that you or your friend (may be an enemy) ciphered</p>
+<input accept="image/*"
+       id="imageInput"
+       multiple="false"
+       onchange="uploadEcrypedImage()"
+       type="file">
+<br>
+<input onclick="decrypt()"
+       type="button"
+       value="Decrypt">
+<br>
+<canvas id="canvas1"></canvas>
+<canvas id="canvas2"></canvas>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+  margin: 20px;
+}
+
+canvas {
+  width: 500px;
+}
+
+.header {
+  font-family: serif;
+  padding: 5px;
+  text-align: left;
+  font-size: 15px;
+}

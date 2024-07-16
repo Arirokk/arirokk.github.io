@@ -1,0 +1,37 @@
+<!--The assignment to make to do app
+Here is some hardcod is present, yeah-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>TODO list</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<a href="../" style="font-size:15px">back</a>
+
+<h2 id="myHeader">
+    TO DO List
+</h2>
+<p>
+    <input id="addButton" onclick="addTask()" type="button" value="Add"/>
+</p>
+<p>
+    <input id="input" placeholder="enter task..." type="text"/>
+</p>
+<ul id="tasks">
+    <li>
+        <input class="done" onclick="markDone(this.parentNode)" type="button" value="&#x2713;"/>
+        <input class="remove" onclick="remove(this.parentNode)" type="button" value="&#x2715;"/>
+        <input class="important" onclick="importantMark(this.parentNode)" type="button" value="!"/>
+        make todo list
+    </li>
+</ul>
+<hr>
+<div id="divabout"></div>
+<input onclick="doAbout()" type="button" value="About"/>
+<input onclick="clearAbout()" type="button" value="Clear"/>
+<script src="./script.js"></script>
+</body>
+</html>
